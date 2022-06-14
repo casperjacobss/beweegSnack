@@ -21,6 +21,8 @@ export const Categories: string[] = [
 
 const HomePage = () => {
 	const [currentPage, changeCurrentPage] = useState<JSX.Element | undefined>();
+	console.log(Categories);
+	
 
 	const clickItem = (item: string) => {
 		let list: Oefening[] = [];

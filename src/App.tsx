@@ -7,7 +7,7 @@ function App() {
 		<Layout className="body">
 			<Switch>
 				<Route path="/" exact>
-					<HomePage />
+					<HomePage/>
 				</Route>
 			</Switch>
 		</Layout>
