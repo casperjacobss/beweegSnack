@@ -2,7 +2,7 @@ import { Intensiteit, Oefening } from "../models/Oefening";
 
 export const VriezenEnDooien = (): Oefening => {
 	return {
-		titel: "Vriezen en dooien1",
+		titel: "Vriezen en dooien",
 		uitleg: "De leerlingen staan bevroren in het klaslokaal, ze mogen dus helemaal niet bewegen. De leerkracht noemt een lichaamsdeel op dat ontdooit wordt en wat ze dus mogen bewegen. De rest van het lichaam wat nog niet genoemd is, blijft dus bevroren en mag niet bewogen worden. Steeds meer en meer lichaamsdelen worden ontdooid, tot het volledige lichaam bewogen kan worden.",
 		variant:
 			"Laat de leerlingen na de ontdooiing van een lichaamsdeel een basisbeweging uitvoeren waarvoor enkel dat lichaamsdeel nodig is. Bijvoorbeeld: de rechterarm is ontdooid, laat ze een papier pakken en daarmee zwaaien in de lucht.",
