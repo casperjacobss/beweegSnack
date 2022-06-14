@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:600');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:900');
+
+$cyan: #41b9c1;  // Telloport Cyan
+$tello-dark: #12354b; // Telloport dark color
+
+$tello-light-pastel: #0DA3BA;
+$tello-dark-pastel: #046E94;
+
+// Derived from theme colors above using https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991#43960991
+$cyan-filter: invert(61%) sepia(38%) saturate(555%) hue-rotate(135deg) brightness(94%) contrast(105%);
+$tello-dark-filter: invert(20%) sepia(29%) saturate(964%) hue-rotate(159deg) brightness(89%) contrast(102%);
+
+// Color system from bootstrap
+$off-white: rgba(240,235,236,255);
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-pastel-500: #A8A9AD !default;
+$gray-pastel-600: #838487 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #df014a !default;
+$orange:  #fc9712 !default;
+$yellow:  #ffc107 !default;
+$green:   #26cd41 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$blue-pastel:    #5DADE2 !default;
+$red-pastel:     #C70039 !default;
+$yellow-pastel:  #FFC300 !default;
+$green-pastel:   #2ECC71 !default;
+$dark-green-pastel: #1F7D1F;
+$light-green-pastel: #5DC360;
+
+
+// Customized themes
+$primary:       $tello-light-pastel !default;
+$secondary:     #5DADE2 !default;
+$success:       $green !default;
+$info:          #b5e0fd !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$link-color:    $secondary;
+
+$default-gradient: linear-gradient(45deg, $secondary, $primary) !default;
+
+$enable-shadows:                              true !default;
+$enable-gradients:                            true !default;
+$enable-responsive-font-sizes:                true !default;
+
+// Size tweaks for large displays
+$spacer:         2rem !default;
+$font-size-base: 2rem !default;
+$grid-gutter-width:           60px !default;
+$border-width:                2px !default;
+$border-radius:               .5rem !default;
+$border-radius-lg:            .6rem !default;
+$border-radius-sm:            .4rem !default;
+$list-inline-padding:         1rem !default;
+$table-cell-padding:          1.5rem !default;
+$table-cell-padding-sm:       .6rem !default;
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         1.5rem !default;
+$input-btn-focus-width:       .4rem !default;
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      1rem !default;
+$input-btn-padding-y-lg:      1rem !default;
+$input-btn-padding-x-lg:      2rem !default;
+$btn-block-spacing-y:         1rem !default;
+$label-margin-bottom:         1rem !default;
+$form-text-margin-top:        .5rem !default;
+$form-check-input-gutter:     2.5rem !default;
+$form-check-input-margin-y:   .6rem !default;
+$form-check-input-margin-x:   .5rem !default;
+$form-check-inline-margin-x:       1.5rem !default;
+$form-check-inline-input-margin-x: .625rem !default;
+$form-grid-gutter-width:           20px !default;
+$form-group-margin-bottom:         2rem !default;
+$custom-control-gutter:            1rem !default;
+$custom-control-spacer-x:          2rem !default;
+$custom-control-indicator-size:    2rem !default;
+$nav-link-padding-y:                1rem !default;
+$nav-link-padding-x:                2rem !default;
+$navbar-nav-link-padding-x:         1rem !default;
+$navbar-toggler-padding-y:          .5rem !default;
+$navbar-toggler-padding-x:          1.5rem !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.body {
+  background-color: $red;
+
+  @extend .d-flex;
+  @extend .flex-column;
+}
+
+.header {
+  @extend .d-flex;
+  @extend .w-100;
+  @extend .justify-content-center;
+}
+
+.footer {
+  @extend .pt-4;
+  @extend .d-flex;
+  @extend .flex-row;
+  @extend .justify-content-between;
+  a {
+    img {
+      height: 5rem;
+    }
+  }
+}
+
+.logo {
+  @extend .img-fluid;
+}
+
+.homeList {
+  @extend .list-group;
+    background-color: $white;
+    @extend .m-1;
+    @extend .shadow;
+    @extend .shadow-lg;
+    border-radius: 3px;
+
+
+  li {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    color: $red;
+    @extend .border;
+    @extend .border-bottom;
+    @extend .border-1;
+  }
+}
+
+.infoField {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .justify-content-center;
+}
+
+.title {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  color: white;
+  @extend .h4;
+  @extend .m-2;
+  @extend .align-items-center;
+
+    button {
+    @extend .backButton;
+    
+  }
+}
+
+.textfield {
+  background-color: white;
+  @extend .border;
+  @extend .shadow;
+  @extend .shadow-lg;
+  border-radius: 3rem;
+  @extend .m-2;
+  @extend .p-2;
+  @extend .display-6;
+}
+
+.backContainer {
+  @extend .d-flex;
+  @extend .justify-content-end;
+
+  button {
+    @extend .backButton;
+  }
+}
+
+.backButton {
+    @extend .btn;
+    background-color: white;
+    @extend .border;
+    @extend .shadow;
+    @extend .shadow-lg;
+    border-radius: 1rem;
+    @extend .p-2;
+
+}
