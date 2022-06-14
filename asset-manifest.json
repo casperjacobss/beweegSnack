@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/beweegSnack/static/css/main.bc9e383b.css",
-    "main.js": "/beweegSnack/static/js/main.6e32a05f.js",
+    "main.js": "/beweegSnack/static/js/main.0a676e2b.js",
     "static/media/logo_ucleuvenlimburg_socialmedia_rgb.png": "/beweegSnack/static/media/logo_ucleuvenlimburg_socialmedia_rgb.24e976fa53a1f682242b.png",
     "static/media/logo_uhasselt.png": "/beweegSnack/static/media/logo_uhasselt.e59deb9bf47bf9b1e604.png",
     "static/media/logo.png": "/beweegSnack/static/media/logo.6682309c62b371ae89c7.png",
     "index.html": "/beweegSnack/index.html",
     "main.bc9e383b.css.map": "/beweegSnack/static/css/main.bc9e383b.css.map",
-    "main.6e32a05f.js.map": "/beweegSnack/static/js/main.6e32a05f.js.map"
+    "main.0a676e2b.js.map": "/beweegSnack/static/js/main.0a676e2b.js.map"
   },
   "entrypoints": [
     "static/css/main.bc9e383b.css",
-    "static/js/main.6e32a05f.js"
+    "static/js/main.0a676e2b.js"
   ]
 }
