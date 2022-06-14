@@ -12,12 +12,12 @@
     "description": "A highly scalable & plug-able, Progressive Web Application foundation with the best Developer Experience.",
     "icons": [
       {
-        "src": "./images/logo.png",
+        "src": "/images/logo.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "./images/logo.png",
+        "src": "/images/logo.png",
         "type": "image/png",
         "sizes": "512x512"
       }

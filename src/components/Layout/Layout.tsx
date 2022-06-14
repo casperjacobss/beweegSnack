@@ -1,11 +1,12 @@
 import Footer from "../../Footer";
 import Header from "../../Header";
+import HomePage from "../../pages/HomePage";
 
 const Layout = (props: any) => {
 	return (
 		<div className="body">
 			<Header />
-			<main>{props.children}</main>
+			<HomePage/>
 			<Footer />
 		</div>
 	);
